@@ -17,6 +17,20 @@ export default {
     };
   },
   divideNum: (num: number, divider = ','): string => {
-    return String(num).replace(/(\d)(?=(\d{3})+(?!\d))/g, `$1${divider}`);
+    const numberParts = num.toString().split('.');
+    numberParts[0] = numberParts[0].replace(/\B(?=(\d{3})+(?!\d))/g, divider);
+    return numberParts.join('.');
+  },
+  round(num: number, accuracy = 0) {
+    return Math.round(num * 10 ** accuracy) / 10 ** accuracy;
+  },
+  // 生成随机整数 包括 start 和 end
+  getRandomInteger(start = 0, end = 100) {
+    return Math.floor(Math.random() * (end - start + 1)) + start;
+  },
+  // 获取数字精度
+  getNumberPrecision(num: number) {
+    const match = `${num}`.match(/\.\d+/g);
+    return match ? match[0].length - 1 : 0;
   },
 };

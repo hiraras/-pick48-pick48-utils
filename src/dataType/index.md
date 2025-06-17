@@ -10,30 +10,30 @@ group:
 
 ## 文档
 
-| 方法        | 描述      | 入参  | 返回值       |
-| ----------- | --------- | ----- | ------------ |
-| getType     | 获取类型  | `any` | 类型的字符串 |
-| isNumber    | 数字      | `any` | Boolean      |
-| isString    | 字符串    | `any` | Boolean      |
-| isBoolean   | 布尔      | `any` | Boolean      |
-| isSymbol    | Symbol    | `any` | Boolean      |
-| isBigint    | Bigint    | `any` | Boolean      |
-| isUndefined | Undefined | `any` | Boolean      |
-| isNull      | Null      | `any` | Boolean      |
-| isObject    | 对象      | `any` | Boolean      |
-| isArray     | 数组      | `any` | Boolean      |
-| isFunction  | 函数      | `any` | Boolean      |
-| isPromise   | Promise   | `any` | Boolean      |
-| isRegExp    | 正则      | `any` | Boolean      |
-| isDate      | 日期      | `any` | Boolean      |
-| isError     | 错误      | `any` | Boolean      |
-| isSet       | Set       | `any` | Boolean      |
-| isMap       | Map       | `any` | Boolean      |
-| isUndef     | 未定义    | `any` | Boolean      |
-| isDef       | 已定义    | `any` | Boolean      |
-| isTruth     | 真值      | `any` | Boolean      |
-| isTrue      | True      | `any` | Boolean      |
-| isFalse     | False     | `any` | Boolean      |
+| 方法        | 描述      | 入参  | 返回值         |
+| ----------- | --------- | ----- | -------------- |
+| getType     | 获取类型  | `any` | `类型的字符串` |
+| isNumber    | 数字      | `any` | `Boolean`      |
+| isString    | 字符串    | `any` | `Boolean`      |
+| isBoolean   | 布尔      | `any` | `Boolean`      |
+| isSymbol    | Symbol    | `any` | `Boolean`      |
+| isBigint    | Bigint    | `any` | `Boolean`      |
+| isUndefined | Undefined | `any` | `Boolean`      |
+| isNull      | Null      | `any` | `Boolean`      |
+| isObject    | 对象      | `any` | `Boolean`      |
+| isArray     | 数组      | `any` | `Boolean`      |
+| isFunction  | 函数      | `any` | `Boolean`      |
+| isPromise   | Promise   | `any` | `Boolean`      |
+| isRegExp    | 正则      | `any` | `Boolean`      |
+| isDate      | 日期      | `any` | `Boolean`      |
+| isError     | 错误      | `any` | `Boolean`      |
+| isSet       | Set       | `any` | `Boolean`      |
+| isMap       | Map       | `any` | `Boolean`      |
+| isUndef     | 未定义    | `any` | `Boolean`      |
+| isDef       | 已定义    | `any` | `Boolean`      |
+| isTruth     | 真值      | `any` | `Boolean`      |
+| isTrue      | True      | `any` | `Boolean`      |
+| isFalse     | False     | `any` | `Boolean`      |
 
 ## 示例
 

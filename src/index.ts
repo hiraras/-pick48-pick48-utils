@@ -1,8 +1,11 @@
 export * as convert from './convert';
 export { default as dataType } from './dataType';
 export { default as date } from './date';
+export * as media from './media';
 export { default as number } from './number';
 export { default as regExps } from './regExps';
 export * as storage from './storage';
 export * as string from './string';
+export * as url from './url';
+export * as utils from './utils';
 export * as web3 from './web3';

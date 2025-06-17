@@ -23,15 +23,15 @@ group:
 
 ### 方法
 
-| 方法      | 描述             | 入参                               | 返回值         |
-| --------- | ---------------- | ---------------------------------- | -------------- |
-| setFlags  | 为正则添加修饰符 | `string` （igmsuy 六个字母的组合） | 带修饰符的正则 |
-| isPhone   | 手机号码         | `string`                           | Boolean        |
-| isEmail   | 邮箱             | `string`                           | Boolean        |
-| isIdCard  | 身份证           | `string`                           | Boolean        |
-| isIdCar   | 车牌号           | `string`                           | Boolean        |
-| isChinese | 中文             | `string`                           | Boolean        |
-| isUrl     | URL              | `string`                           | Boolean        |
+| 方法      | 描述             | 入参                               | 返回值           |
+| --------- | ---------------- | ---------------------------------- | ---------------- |
+| setFlags  | 为正则添加修饰符 | `string` （igmsuy 六个字母的组合） | `带修饰符的正则` |
+| isPhone   | 手机号码         | `string`                           | `Boolean`        |
+| isEmail   | 邮箱             | `string`                           | `Boolean`        |
+| isIdCard  | 身份证           | `string`                           | `Boolean`        |
+| isIdCar   | 车牌号           | `string`                           | `Boolean`        |
+| isChinese | 中文             | `string`                           | `Boolean`        |
+| isUrl     | URL              | `string`                           | `Boolean`        |
 
 ## 示例
 

@@ -80,6 +80,8 @@
     "hirara"
   ],
   "dependencies": {
-    "dayjs": "^1.11.13"
+    "@types/qrcode": "^1.5.5",
+    "dayjs": "^1.11.13",
+    "qrcode": "^1.5.4"
   }
 }
