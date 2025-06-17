@@ -1,5 +1,5 @@
 ---
-title: web3相关工具方法
+title: web3
 nav:
   title: 工具库
   path: /utils

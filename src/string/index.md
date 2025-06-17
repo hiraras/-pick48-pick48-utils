@@ -1,5 +1,5 @@
 ---
-title: 字符串相关工具方法
+title: string
 nav:
   title: 工具库
   path: /utils

@@ -1,5 +1,5 @@
 ---
-title: 数值处理
+title: number
 nav:
   title: 工具库
   path: /utils

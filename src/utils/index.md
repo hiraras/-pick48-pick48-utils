@@ -1,5 +1,5 @@
 ---
-title: utils
+title: utils - 通用
 nav:
   title: 工具库
   path: /utils

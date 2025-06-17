@@ -8,8 +8,8 @@
     "baseUrl": "./",
     "paths": {
       "@@/*": [".dumi/tmp/*"],
-      "@pick48-utils": ["src"],
-      "@pick48-utils/*": ["src/*", "*"]
+      "@pick48/pick48-utils": ["src"],
+      "@pick48/pick48-utils/*": ["src/*", "*"]
     }
   },
   "include": [".dumirc.ts", "src/**/*"]

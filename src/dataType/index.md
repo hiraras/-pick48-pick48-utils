@@ -1,5 +1,5 @@
 ---
-title: 数据类型判断
+title: dataType
 nav:
   title: 工具库
   path: /utils

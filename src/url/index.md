@@ -1,5 +1,5 @@
 ---
-title: URL 相关工具方法
+title: URL
 nav:
   title: 工具库
   path: /utils

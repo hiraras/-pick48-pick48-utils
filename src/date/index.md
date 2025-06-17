@@ -1,5 +1,5 @@
 ---
-title: 时间格式化
+title: date
 nav:
   title: 工具库
   path: /utils

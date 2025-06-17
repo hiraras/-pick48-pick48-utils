@@ -1,4 +1,4 @@
-import { Obj } from '@pick48-utils/type';
+import { Obj } from '@pick48/pick48-utils/type';
 
 export const getSessionItem = (key: string) => {
   return sessionStorage.getItem(key);

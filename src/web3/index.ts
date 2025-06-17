@@ -1,4 +1,4 @@
-import { TruncateConfig, WalletAddress } from '@pick48-utils/type';
+import { TruncateConfig, WalletAddress } from '@pick48/pick48-utils/type';
 import { truncate } from '../string';
 
 export const truncateAddress = (

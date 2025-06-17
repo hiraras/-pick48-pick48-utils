@@ -1,7 +1,7 @@
-# @pick48-utils
+# @pick48/pick48-utils
 
-[![NPM version](https://img.shields.io/npm/v/@pick48-utils.svg?style=flat)](https://npmjs.org/package/@pick48-utils)
-[![NPM downloads](http://img.shields.io/npm/dm/@pick48-utils.svg?style=flat)](https://npmjs.org/package/@pick48-utils)
+[![NPM version](https://img.shields.io/npm/v/@pick48/pick48-utils.svg?style=flat)](https://npmjs.org/package/@pick48/pick48-utils)
+[![NPM downloads](http://img.shields.io/npm/dm/@pick48/pick48-utils.svg?style=flat)](https://npmjs.org/package/@pick48/pick48-utils)
 
 A react library developed with dumi
 
