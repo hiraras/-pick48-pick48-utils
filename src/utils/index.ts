@@ -1,3 +1,7 @@
+import { notification } from 'antd';
+import { NoticeType } from 'antd/es/message/interface';
+import { capitalize } from '../string';
+
 /**
  * 防抖函数，用于延迟执行异步函数，并在延迟期间忽略新的调用。
  * @template T 返回值类型
@@ -41,3 +45,72 @@ export async function getClipboardText() {
   }
   return '';
 }
+
+export function throttle(func: (...rest: any[]) => void, delay = 300) {
+  let lastTime = 0;
+  let timer: NodeJS.Timeout;
+
+  return function (...rest: any[]) {
+    const now = Date.now();
+    clearTimeout(timer);
+
+    if (now - lastTime >= delay) {
+      func(...rest);
+      lastTime = now;
+    } else {
+      timer = setTimeout(() => {
+        func(...rest);
+        lastTime = now;
+      }, lastTime + delay - now);
+    }
+  };
+}
+
+type NotifyType = Exclude<NoticeType, 'loading'>;
+
+const notify = (
+  msg: string,
+  desc = '',
+  type: NotifyType = 'warning',
+  destroy = false,
+) => {
+  if (destroy) {
+    notification.destroy();
+  }
+  notification[type]({ message: msg, description: desc });
+};
+
+export const notice = (
+  msg: string,
+  type: NotifyType = 'warning',
+  destroy = false,
+) => {
+  notify(capitalize(type), msg, type, destroy);
+};
+
+function getError(error: unknown) {
+  if (error instanceof Error) {
+    return error;
+  }
+  return new Error(
+    typeof error === 'object' ? JSON.stringify(error) : String(error),
+  );
+}
+
+export const errorNotice = (error: unknown, destroy = false) => {
+  try {
+    throw getError(error);
+  } catch (e: unknown) {
+    if ((e as Error).message === '') {
+      return;
+    }
+    notice((e as Error).message, 'error', destroy);
+  }
+};
+
+export const web3ErrorNotice = (error: unknown, destroy = true) => {
+  const e = getError(error);
+  // 分割空行的正则
+  const reg = /\n\s*\n/;
+  errorNotice(e.message.split(reg)[0], destroy);
+};

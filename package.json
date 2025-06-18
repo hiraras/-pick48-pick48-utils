@@ -1,6 +1,6 @@
 {
   "name": "@pick48/pick48-utils",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "A react library developed with dumi",
   "license": "MIT",
   "module": "dist/index.js",
@@ -51,6 +51,12 @@
       "prettier --parser=typescript --write"
     ]
   },
+  "dependencies": {
+    "@types/qrcode": "^1.5.5",
+    "antd": "^5.26.1",
+    "dayjs": "^1.11.13",
+    "qrcode": "^1.5.4"
+  },
   "devDependencies": {
     "@commitlint/cli": "^17.1.2",
     "@commitlint/config-conventional": "^17.1.0",
@@ -78,10 +84,5 @@
   },
   "authors": [
     "hirara"
-  ],
-  "dependencies": {
-    "@types/qrcode": "^1.5.5",
-    "dayjs": "^1.11.13",
-    "qrcode": "^1.5.4"
-  }
+  ]
 }

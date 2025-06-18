@@ -14,3 +14,10 @@ export function getStringLength(str: string) {
   const lastLen = zhLen * 2 + otherLen;
   return lastLen;
 }
+
+export function capitalize(str: unknown) {
+  if (typeof str === 'string' && str.length > 0) {
+    return str.charAt(0).toUpperCase() + str.slice(1).toLowerCase();
+  }
+  return '';
+}

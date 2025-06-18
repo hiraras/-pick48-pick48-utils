@@ -10,10 +10,11 @@ group:
 
 ## 文档
 
-| 方法            | 描述                         | 入参                                       | 返回值 |
-| --------------- | ---------------------------- | ------------------------------------------ | ------ |
-| truncate        | 省略字符串                   | `str: string, config: TruncateConfig = {}` | string |
-| getStringLength | 获取字符串长度(中文长度为 2) | `str: string`                              | number |
+| 方法            | 描述                         | 入参                                       | 返回值   |
+| --------------- | ---------------------------- | ------------------------------------------ | -------- |
+| truncate        | 省略字符串                   | `str: string, config: TruncateConfig = {}` | `string` |
+| getStringLength | 获取字符串长度(中文长度为 2) | `str: string`                              | `number` |
+| capitalize      | 将字符串首个字符大写         | `str: unknown`                             | `string` |
 
 `TruncateConfig`
 
@@ -58,6 +59,24 @@ export default () => {
     <div>
       <p>原字符串: {str}</p>
       <p>原字符串: {string.getStringLength(str)}</p>
+    </div>
+  );
+};
+```
+
+## capitalize 示例
+
+```tsx
+import React from 'react';
+import { string } from '@pick48/pick48-utils';
+
+export default () => {
+  const str = 'abcdef';
+
+  return (
+    <div>
+      <p>原字符串: {str}</p>
+      <p>原字符串: {string.capitalize(str)}</p>
     </div>
   );
 };
