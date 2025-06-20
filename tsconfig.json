@@ -12,5 +12,5 @@
       "@pick48/pick48-utils/*": ["src/*", "*"]
     }
   },
-  "include": [".dumirc.ts", "src/**/*"]
+  "include": [".dumirc.ts", "src/**/*", "global.d.ts"]
 }

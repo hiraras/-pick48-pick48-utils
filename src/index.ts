@@ -1,3 +1,4 @@
+export * as bridge from './bridge';
 export * as convert from './convert';
 export { default as dataType } from './dataType';
 export { default as date } from './date';
